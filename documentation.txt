@@ -1,0 +1,65 @@
+//REST methods
+GET http://127.0.0.1/techsonar/rest/items
+GET http://127.0.0.1/techsonar/rest/items/id/fa9a0c16-7aa1-4aab-a616-7ae0d5675683
+GET http://127.0.0.1/techsonar/rest/items/sectors/c20c5e9c-5b07-417a-a431-5cf79af0358b/tracks/9d312b9f-24e7-4522-a226-2d97310fdc10
+GET http://127.0.0.1/techsonar/rest/tracks
+GET http://127.0.0.1/techsonar/rest/tracks/tag/application
+GET http://127.0.0.1/techsonar/rest/sectors
+GET http://127.0.0.1/techsonar/rest/sectors/tag/application
+
+POST http://127.0.0.1/techsonar/rest/items
+POST http://127.0.0.1/techsonar/rest/tracks
+POST http://127.0.0.1/techsonar/rest/sectors
+
+PUT http://127.0.0.1/techsonar/rest/items
+PUT http://127.0.0.1/techsonar/rest/tracks
+PUT http://127.0.0.1/techsonar/rest/sectors
+
+DELETE http://127.0.0.1/techsonar/rest/items
+DELETE http://127.0.0.1/techsonar/rest/tracks
+DELETE http://127.0.0.1/techsonar/rest/sectors
+
+// Item example
+{
+	"name":"fromtestweb",
+	"id":"fa9a0c16-7aa1-4aab-a616-7ae0d5675683",			//UNIQUE
+	"description":"fromtestweb",
+	"created":1381492556918,
+	"shortcut":"testweb",									//UNIQUE
+	"coordinates":{
+		"angular":5.0,
+		"radial":10.0
+	},
+	"track_id":"9d312b9f-24e7-4522-a226-2d97310fdc10",
+	"sector_id":"c20c5e9c-5b07-417a-a431-5cf79af0358b",
+	"vendor":null,
+	"url":null,
+	"license":null,
+	"modified":null,
+	"state":"USED",
+	"versions":null
+}
+
+// Track example
+{
+	"name":"Adopt",
+	"id":"9d312b9f-24e7-4522-a226-2d97310fdc10",			//UNIQUE
+	"description":"Adopt",
+	"tags":[
+		"application",
+		"tech"
+	],
+	"weight":1
+}
+
+// Sector example
+{
+	"name":"Techniques",
+	"id":"c20c5e9c-5b07-417a-a431-5cf79af0358b",			//UNIQUE
+	"description":"Techniques",
+	"tags":[
+		"application",
+		"tech"
+	],
+	"weight":1
+}

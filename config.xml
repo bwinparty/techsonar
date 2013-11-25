@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <webservice>
+        <hostname>localhost</hostname>
+        <webport>8080</webport>
+        <staticfiles>./web</staticfiles>
+    </webservice>
+    <mongodb>
+        <uri>mongodb://127.0.0.1:27017/techsonar</uri>
+    </mongodb>
+</config>

@@ -1,0 +1,150 @@
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	color: #323a6b;
+}
+
+ul, li { 
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#main {
+	width: 1300px;
+	height: 830px;
+	margin: auto;
+	padding: 0px;
+}
+
+#legend {
+	width: 470px;
+	height: 820px;
+	display: inline-block;
+	float: right;
+	padding: 0px;
+}
+
+#radar {
+	width: 820px;
+	height: 820px;
+	display: inline-block;
+	padding: 0px;
+}
+
+#techlist {
+	overflow: auto;
+	width: 470px;
+	height: 700px;
+	padding: 0px;
+}
+
+.tooltip {
+	position: absolute;
+	text-align: center;
+	padding: 2px;
+	font-size: 12px;
+	color: #ffffff;
+	background: #323a6b;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+.details {
+	position: absolute;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	background: #323a6b;
+	border: 0px;
+	border-radius: 8px;
+	  padding: 2px;
+    padding-top: 20px;
+}
+
+    .details table {
+        text-align: left;
+        text-transform: initial;
+    }
+
+.toast {
+	position: fixed;
+    bottom: 50px;
+    left: 50%;
+	text-align: center;
+	padding: 2px;
+	font-size: 12px;
+	color: #ffffff;
+	background: #323a6b;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+.nodetext {
+	font-size: 10px;
+	fill: #323a6b;
+}
+
+.trackTitle {
+	font-size: 16px;
+	fill: #969dc8;
+    padding: 4px;
+    font-weight: bolder;
+}
+
+.node {
+    cursor: pointer;
+}
+
+.btitle {
+	font-size: 12px;
+	font-weight: bold;
+	fill: #747ba6;
+    text-anchor: middle;
+}
+
+.track {
+    fill: lightblue;
+    stroke: #747ba6;
+    stroke-width: 1px;
+}
+
+.sector {
+    stroke: #747ba6;
+    stroke-width: 2px
+}
+
+.control_field {
+    fill: white;
+    stroke: #747ba6;
+    stroke-width: 1px;
+
+}
+
+.c {
+    fill: #13b5ea;
+    stroke: white;
+}
+
+.t {
+    fill: #13b5ea;
+    stroke: white;
+}
+
+.description {
+    position: absolute;
+}
+
+.form_edit {
+    border: 2px solid #323a6b;
+}
+
+.close_icon {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
